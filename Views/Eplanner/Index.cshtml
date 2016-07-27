@@ -1,0 +1,378 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<html>
+<head>
+    <title>Home</title>
+    
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Site.js"></script>
+
+    <script src="~/Slider/full-width-slider.slider/js/jssor.slider.min.js"></script>
+    <link rel="stylesheet" href="~/Bootstrap/templatemo-style.css">
+
+
+    <!--Bootsrtap Libraries-->
+    <link rel="stylesheet" href="~/Bootstrap/bootstrap.min.css">
+    <script src="~/Bootstrap/bootstrap.min.js"></script>
+    <script src="~/Bootstrap/jquery.js"></script>
+
+    <!--JQuery UI Libraries-->
+    <link rel="stylesheet" href="~/JQuery-UI/jquery-ui.css">
+    <link rel="stylesheet" href="~/JQuery-UI/style.css">
+    <script src="~/JQuery-UI/jquery-1.10.2.js"></script>
+    <script src="~/JQuery-UI/jquery-ui.js"></script>
+
+    <!--Online Libraries-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="~/font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.min.css">
+
+</head>
+<body style="background-color: rgb(80,200,170);">
+    <!--Start Header-->
+    <header>
+        <div class="navbar navbar-default" role="navigation" id="header">
+            <div class="navbar-header" id="nav-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="" href="#">
+                    <span class="navbar-brand">
+                        <span class="glyphicon glyphicon-tent"></span> ePlanner
+                    </span>
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="main-ul">
+                    <li id="main-li">
+                        <a href="~/Eplanner/Index" id="main-a">
+                            <span class="glyphicon glyphicon-home padding-right-small"></span> Home<!--<i class="fa fa-caret-down"></i>-->
+                        </a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/Reservation" id="main-a">
+                            <span class="glyphicon glyphicon-briefcase padding-right-small"></span> Reservation<!--<i class="fa fa-caret-down"></i>-->
+                        </a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/About" id="main-a">
+                            <span class="glyphicon glyphicon-user padding-right-small"></span> About us<!--<i class="fa fa-caret-down"></i>-->
+                        </a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/Contact" id="main-a">
+                            <span class="glyphicon glyphicon-phone-alt padding-right-small"></span> Contact Us<!--<i class="fa fa-caret-down"></i>-->
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+    <div class="row" style="border:solid 1px;"></div>
+
+    <!--Body Starts Here-->
+    <div class="container-fluid">
+        <!--Slider Starts-->
+        <div class="row">
+            <div id="jssor_1" style="position: relative; margin: 0 auto; width: 1300px; height: 450px; overflow: hidden; visibility: hidden;">
+                <!-- Loading Screen -->
+                <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
+                    <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; width: 100%; height: 100%;"></div>
+                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                </div>
+                <div data-u="slides" style="cursor: default; position: relative;width: 1300px; height: 500px; overflow: hidden;">
+                    <div data-p="225.00" style="display: none;">
+                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/2.jpg" />
+                    </div>
+                    <div data-p="225.00" style="display: none;">
+                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/1.jpg." />
+                    </div>
+                    <div data-p="225.00" style="display: none;">
+                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/3.jpg" />
+                    </div>
+                    <div data-p="225.00" style="display: none;">
+                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/4.jpg" />
+                    </div>
+                    <div data-p="225.00" style="display: none;">
+                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/5.jpg" />
+                    </div>
+                </div>
+                <!-- Bullet Navigator -->
+                <div data-u="navigator" class="jssorb05" style="bottom:40px; right:16px;" data-autocenter="1">
+                    <!-- bullet navigator item prototype -->
+                    <div data-u="prototype" style="width:25px;height:25px;">
+                        <img src="~/Slider/full-width-slider.slider/img/b05.png">
+                    </div>
+                </div>
+                <!-- Arrow Navigator -->
+                <span data-u="arrowleft" class="jssora22L" style="left:12px;width:50px;height:70px;" data-autocenter="2">
+                    <img src="~/Slider/full-width-slider.slider/img/a22.png" style="margin-left:-15px; margin-top:-30px;">
+                </span>
+                <span data-u="arrowright" class="jssora22R" style="right:12px;width:50px;height:70px;" data-autocenter="2">
+                    <img src="~/Slider/full-width-slider.slider/img/a22.png" style="margin-left:-70px; margin-top:-30px;">
+                </span>
+            </div>
+            <div id="slider-search">
+                <form action="~/Eplanner/Hotels" style="margin-top:5%;">
+                    <div class="col-lg-12 form-inline">
+                        <div class="input-group" style="width:31%; margin-left:1%;" id="slider-input">
+                            <div class="input-group-addon">Check In</div>
+                            <input type="date" class="form-control" placeholder="">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </div>
+                        </div>
+                        <div class="input-group" style="width:31%; margin-left:1%;" id="slider-input">
+                            <div class="input-group-addon">Check Out</div>
+                            <input type="date" class="form-control" placeholder="">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </div>
+                        </div>
+                        <div class="input-group" id="slider-input" style="width:30%; margin-left:1%; border-radius:5px;">
+                            <input list="city" name="city" class="form-control" placeholder="--Select City--" style="">
+                            <datalist id="city">
+                                <option>Lahore</option>
+                                <option>Islamabad</option>
+                                <option>Karachi</option>
+                                <option>Multan</option>
+                                <option>faisalbad</option>
+                                <option>Peshawar</option>
+                                <option>Azad Kashmir</option>
+                                <option>Sawat</option>
+                                <option>Quetta</option>
+                                <option>Shaikhupura</option>
+                                <option>Gujrat</option>
+                                <option>Gujrawnwala</option>
+                                <option>Rawalpindi</option>
+                                <option>Hyderabad</option>
+                                <option>Sialkot</option>
+                                <option>Sargodha</option>
+                                <option>Gilgit</option>
+                                <option>Chitrl</option>
+                                <option>Sukkar</option>
+                                <option>Jhelum</option>
+                                <option>Sahiwal</option>
+                                <option>Jhang</option>
+                            </datalist>
+                        </div>
+                        <!--<div class="input-group" style="width:35%;" id="slider-input">
+                            <div class="input-group-addon">Search Hotel</div>
+                                <select class="form-control" placeholder="Select Hotel">
+                                    <option value="">-- Select Hotel -- </option>
+                                    <optgroup label="Lahore">
+                                        <option>Pearl Continental Hotel</option>
+                                        <option>Avari Hotel Lahore</option>
+                                        <option>Hospitality Inn Lahore</option>
+                                        <option>Ambassador Hotel Lahore</option>
+                                        <option>Smart Hotel Lahore</option>
+                                        <option>Hotel Sunfort Lahore</option>
+                                        <option>Amer Hotel Lahore</option>
+                                        <option>Maisonette Luxury Suites Lahore</option>
+                                        <option>Leaders Inn Lahore</option>
+                                        <option>Hotel Crown Plaza Lahore</option>
+                                        <option>Mary Inn Lahore</option>
+                                        <option>Country Comfort Motel</option>
+                                        <option>Grace Hotel Lahore</option>
+                                        <option>Hotel Alpine Lahore</option>
+                                        <option>Regency Inn Lahore</option>
+                                    </optgroup>
+                                    <optgroup label="Islamabad">
+                                        <option>Islamabad Serena Hotel</option>
+                                        <option>Islamabad Marriott Hotel</option>
+                                        <option>Gofas Lodge</option>
+                                        <option>Chalet Islamabad</option>
+                                        <option>Avari Xpress School Road</option>
+                                        <option>Serai Boutique Hotel</option>
+                                        <option>Grand Regency Hotel</option>
+                                        <option>Jasmine Guest Houses Islamabad</option>
+                                        <option>Avari Xpress Aga Khan Road</option>
+                                        <option>Hotel One Super</option>
+                                        <option>Envoy Continental Hotel</option>
+                                        <option>Hotel One 7th Avenue</option>
+                                    </optgroup>
+                                    <optgroup label="Karachi">
+                                        <option>Karachi Marriott Hotel</option>
+                                        <option>Avari Tower Karachi</option>
+                                        <option>M0venpick Hotel Karachi</option>
+                                        <option>Pearl Continental Hotel, Karachi</option>
+                                        <option>Ramada Plaza Karachi</option>
+                                        <option>Beach Luxury Hotel</option>
+                                        <option>Days Inn Hotel</option>
+                                        <option>Regent Plaza Hotel & Convention Center</option>
+                                        <option>Elegance Services 2</option>
+                                        <option>Zizi Suite</option>
+                                        <option>Exclusive Homes</option>
+                                        <option>Hotel One Karachi</option>
+                                        <option>Sea Shell Inn</option>
+                                        <option>Mariners Base Apartments</option>
+                                        <option>Chalet S40 Beach Hut Sandspit</option>
+                                    </optgroup>
+                                    <div class="input-group-addon">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </div>
+                            </select>
+                        </div>-->
+                        <input type="submit" value="Check Availability" class="tm-yellow-btn" style="margin-left:42%; width:180px; margin-top:1%; border-radius:5px;">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!--Slider Ends-->
+        <!--Popullar Deals Starts-->
+        <div class="row" style="margin-top:6%;">
+            <div class="row" style="border-bottom:solid gray; margin-top: 1%; width:30%; margin-left: 35%;"></div>
+            <div class="row text-center">
+                <h3 id="special-h3">Some Dealing Hotels Pictures</h3>
+            </div>
+            <div class="row" style="border-top:solid gray; margin-bottom: 1%; width:30%; margin-left: 35%;"></div>
+        </div>
+
+        <div class="row">
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="Gallery/Exterior-arcadian-hotels-resortsShogran(Naran).jpg">
+                        <img src="~/Gallery/Exterior-arcadian-hotels-resortsShogran(Naran).jpg">
+                    </a>
+                    <div class="desc">Exterior Arcadian Hotels Shogran (Naran)</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/Hunza-Embassy-Hotel(Gilgit).jpg">
+                        <img src="~/Gallery/Hunza-Embassy-Hotel(Gilgit).jpg">
+                    </a>
+                    <div class="desc">Hunza Embassy Hotel (Gilgit)</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/Pc(Lahore).jpg">
+                        <img src="~/Gallery/Pc(Lahore).jpg">
+                    </a>
+                    <div class="desc">Pearl Continental Hotel Lahore</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/perhena-cottages(naran).jpg">
+                        <img src="~/Gallery/perhena-cottages(naran).jpg">
+                    </a>
+                    <div class="desc">Perhena Cottages (Naran)</div>
+                </div>
+            </div>
+
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/Port-Grand(Karachi).jpg">
+                        <img src="~/Gallery/Port-Grand(Karachi).jpg">
+                    </a>
+                    <div class="desc">Port Grand (Karachi)</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/Serena-Hotel(Gilgit).jpg">
+                        <img src="~/Gallery/Serena-Hotel(Gilgit).jpg">
+                    </a>
+                    <div class="desc">Serena Hotel (Gilgit)</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/Serena-Hotel(Islamabad).jpg">
+                        <img src="~/Gallery/Serena-Hotel(Islamabad).jpg">
+                    </a>
+                    <div class="desc">Serena Hotel (Islamabad)</div>
+                </div>
+            </div>
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/trout-land-hotel(Naran).jpg">
+                        <img src="~/Gallery/trout-land-hotel(Naran).jpg">
+                    </a>
+                    <div class="desc">Trout Land Hotel (Naran)</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--Body Ends Here-->
+    <!--Start Footer-->
+    <!--Social Medias Row Starts-->
+    <div class="row" style="margin-top:2%;">
+        <div class="row" style="border-bottom:solid gray; margin-top:1%; margin-left:36%; width:28%;"></div>
+        <div class="row">
+            <h3 class="text-center" style="font-family:cursive; "><i> Places Where you can Contact us: </i></h3>
+            <div class="contact-social text-center">
+                <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
+                <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--Social Medias Row Starts-->
+
+    <footer class="tm-black-bg" style="margin-top: 1%;">
+        <div class="container">
+            <div class="row">
+                <p class="tm-copyright-text">
+                    Copyright &copy; 2084 | ePlanner | Designed by <a href="#">4 Pointers</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--Start Footer-->
+
+
+
+
+    <script>
+        jssor_1_slider_init();
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

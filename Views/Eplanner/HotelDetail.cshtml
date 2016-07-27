@@ -1,0 +1,368 @@
+﻿
+@{
+    ViewBag.Title = "HotelDetail";
+}
+
+<h2>HotelDetail</h2>
+
+<html>
+<head>
+    <title>Hotel Detail</title>
+    <link rel="stylesheet" href="~/Site.css">
+    <script src="~/Site.js"></script>
+
+    <script src="~/Slider/full-width-slider.slider/js/jssor.slider.min.js"></script>
+    <link rel="stylesheet" href="~/Bootstrap/templatemo-style.css">
+
+
+    <!--Bootsrtap Libraries-->
+    <link rel="stylesheet" href="~/Bootstrap/bootstrap.min.css">
+    <script src="~/Bootstrap/bootstrap.min.js"></script>
+    <script src="~/Bootstrap/jquery.js"></script>
+
+    <!--JQuery UI Libraries-->
+    <link rel="stylesheet" href="~/JQuery-UI/jquery-ui.css">
+    <link rel="stylesheet" href="~/JQuery-UI/style.css">
+    <script src="~/JQuery-UI/jquery-1.10.2.js"></script>
+    <script src="~/JQuery-UI/jquery-ui.js"></script>
+
+    <!--Online Libraries-->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="~/font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.min.css">
+
+</head>
+<body style="background-color: rgb(80,200,170);">
+    <!--Start Header-->
+    <header>
+        <div class="navbar navbar-default" role="navigation" id="header">
+            <div class="navbar-header" id="nav-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="" href="#">
+                    <span class="navbar-brand">
+                        <span class="glyphicon glyphicon-tent"></span> ePlanner
+                    </span>
+                </a>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right" id="main-ul">
+                    <li id="main-li">
+                        <a href="~/Eplanner/Index" id="main-a"><span class="glyphicon glyphicon-home padding-right-small"></span> Home</a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/Reservation" id="main-a">
+                            <span class="glyphicon glyphicon-briefcase padding-right-small"></span> Reservation
+                        </a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/About" id="main-a"><span class="glyphicon glyphicon-user padding-right-small"></span> About us</a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/Contact" id="main-a"><span class="glyphicon glyphicon-phone-alt padding-right-small"></span> Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!--End Header-->
+    <div class="row" style="border:solid 1px;"></div>
+
+    <!--Body Starts Here-->
+
+    <div class="row" style="border:solid 1px;"></div>
+
+    <div class="row" style="margin-top:1%;">
+        <div class="row" style="border-bottom:solid gray; width:30%; margin-left: 35%;"></div>
+        <div class="row">
+            <div class="col-lg-4">
+                <h3>
+                    <a href="" data-toggle="modal" data-target="#room-book" id="reserve-a" style="float:right;">Reserve A Room</a>
+                </h3>
+            </div>
+            <div class="col-lg-4 text-center">
+                <h3 id="special-h3" style="font-weight:bolder;">Hotel Complete Profile</h3>
+            </div>
+            <div class="col-lg-4">
+                <h3>
+                    <a href="" data-toggle="modal" data-target="#event-book" id="reserve-a"> Book an Event</a>
+                </h3>
+            </div>
+
+        </div>
+        <div class="row" style="border-top:solid gray; margin-bottom: 1%; width:30%; margin-left: 35%;"></div>
+    </div>
+
+
+    <div class="container-fluid" style="margin-top:1%;">
+        <div class="row">
+            <div class="responsive">
+                <div class="img">
+                    <a target="_blank" href="~/Gallery/Exterior-arcadian-hotels-resortsShogran(Naran).jpg">
+                        <img src="Gallery/Exterior-arcadian-hotels-resortsShogran(Naran).jpg">
+                    </a>
+                    <div class="desc">Exterior Arcadian Hotels Shogran (Naran)</div>
+                </div>
+            </div>
+
+            <div class="responsive" style="border-right:solid 1px;">
+                <label style="font-size:25px;">Hotel Name:</label>
+                <p style="font-weight:bold;">
+                    Exterior Arcadian Hotels Shogran (Naran)
+                </p>
+                <hr />
+                <label style="font-size:25px;">Address: </label>
+                <p style="font-weight:bold;">
+                    124 Kings Road Brighton, East Sussex BN1 2FY
+                </p>
+            </div>
+            <div class="responsive" style="border-right:solid 1px;">
+                <label style="font-size:25px;">Website:</label>
+                <p style="font-weight:bold;">
+                    <a href="#">www.google.com</a>
+                </p>
+                <hr />
+                <label style="font-size:25px;">Hours of Operation: </label>
+                <p style="font-weight:bold;">
+                    Monday - Thursday: 08:00-14:00 & 17:00-22:30
+                    Friday - Sunday: 08:00-22:30
+                </p>
+            </div>
+
+            <div class="responsive">
+                <label style="font-size:25px;">Dining Style:</label>
+                <p style="font-weight:bold;">
+                    Casual Dining
+                </p>
+                <hr />
+                <label style="font-size:25px;">Phone Number:</label>
+                <p style="font-weight:bold;">
+                    +92-4235786
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!--Body Ends Here-->
+    <!--Start Footer-->
+    <!--Social Medias Row Starts-->
+    <div class="row" style="margin-top:2%;">
+        <div class="row" style="border-bottom:solid gray; margin-top:1%; margin-left:36%; width:28%;"></div>
+        <div class="row">
+            <h3 class="text-center" style="font-family:cursive; "><i> Places Where you can Contact us: </i></h3>
+            <div class="contact-social text-center">
+                <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
+                <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
+                <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
+            </div>
+        </div>
+    </div>
+    <!--Social Medias Row Starts-->
+
+    <footer class="tm-black-bg" style="margin-top: 1%;">
+        <div class="container">
+            <div class="row">
+                <p class="tm-copyright-text">
+                    Copyright &copy; 2084 | ePlanner | Designed by <a href="#">4 Pointers</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!--End Footer-->
+    <!-- Modal Form For Room Booking Starts Here -->
+    <div id="room-book" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Enter Detail:</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="~/Eplanner/Confirmation">
+                        <div class="col-lg-12">
+                            <div class="form-group col-lg-6">
+                                <label>Arrival Date: </label>
+                                <div class="inner-addon right-addon" style="width:100%;">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                    <input type="date" class="form-control" placeholder="Search" />
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Departure Date: </label>
+                                <div class="inner-addon right-addon" style="width:100%;">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                    <input type="date" class="form-control" placeholder="Search" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group col-lg-6">
+                                <div class="input-group">
+                                    <label>Room Type: </label>
+                                    <input list="room" name="room" class="form-control" placeholder="--Select Room Type--" style="width:100%;; border-radius:5px;">
+                                    <datalist id="room">
+                                        <option>Single Room</option>
+                                        <option>Double Room</option>
+                                        <option>Adjoing Room</option>
+                                        <option>Studio Room</option>
+                                        <option>Deluxe Room</option>
+                                        <option>Club Room</option>
+                                        <option>Executive Suite Room</option>
+                                    </datalist>
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <div class="input-group">
+                                    <label>Guests: </label><br />
+                                    <!--<div class="input-group-addon">Guests: </div>-->
+                                    <input list="adults" name="adults" class="form-control" placeholder="--Adults--" style="width:240px; border-radius:5px;">
+                                    <datalist id="adults">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6 & up</option>
+                                    </datalist>
+                                    <input list="children" name="children" class="form-control" placeholder="--Children--" style="width:240px; border-radius:5px;">
+                                    <datalist id="children">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6 & up</option>
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+                        <input type="submit" value="Reserve My Room" class="btn btn-success" style="margin-left:43%;">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Form for Room Booing Ends Here -->
+    <!-- Modal Form For Room Booking Starts Here -->
+    <div id="event-book" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Enter Event Detail:</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="~/Eplanner/Confirmation">
+                        <div class="col-lg-12">
+                            <div class="form-group col-lg-6">
+                                <label>Event Starting Date: </label>
+                                <div class="inner-addon right-addon" style="width:100%;">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                    <input type="date" class="form-control" placeholder="Search" />
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Event Ending Date: </label>
+                                <div class="inner-addon right-addon" style="width:100%;">
+                                    <i class="glyphicon glyphicon-calendar"></i>
+                                    <input type="date" class="form-control" placeholder="Search" />
+                                </div>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Event Type: </label>
+                                <input list="event" name="event" class="form-control" placeholder="--Select Event Type--" style="width:100%; border-radius:5px;">
+                                <datalist id="event">
+                                    <option>Conferences</option>
+                                    <option>Seminar</option>
+                                    <option>Meeting</option>
+                                    <option>Team Building</option>
+                                    <option>Trade Show</option>
+                                    <option>Business Dinner</option>
+                                    <option>Golf Event</option>
+                                    <option>Press Conference</option>
+                                    <option>Networking Event</option>
+                                    <option>Incentive Travel</option>
+                                    <option>Opening Ceremony</option>
+                                    <option>Product Launch</option>
+                                    <option>Theme Party</option>
+                                    <option>VIP Event</option>
+                                    <option>Trade Fair</option>
+                                    <option>Annual Shareholder</option>
+                                    <option>Award Ceremony</option>
+                                    <option>Incentive Event</option>
+                                    <option>Board Meeting</option>
+                                    <option>Executie Retreat</option>
+                                    <option>weddings</option>
+                                    <option>birthday events</option>
+                                    <option>wedding anniversaries</option>
+                                    <option>family events</option>
+                                    <option>OTHERS...</option>
+                                </datalist>
+                            </div>
+                            <div class="form-group col-lg-6">
+                                <label>Number Of Attendees: </label><br />
+                                <input list="attendeees" name="attendeees" class="form-control" placeholder="--Attendeees--" style="width:105%; border-radius:5px;">
+                                <datalist id="attendeees">
+                                    <option>50</option>
+                                    <option>100</option>
+                                    <option>150</option>
+                                    <option>200</option>
+                                    <option>250</option>
+                                    <option>300</option>
+                                </datalist>
+                            </div>
+                        </div>
+                        <input type="submit" value="Reserve My Event" class="btn btn-success" style="margin-left:43%;">
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Form for Room Booing Ends Here -->
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

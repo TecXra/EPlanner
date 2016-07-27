@@ -1,0 +1,271 @@
+#header
+{
+    height: auto;
+    margin-bottom: 0%;
+}
+/*--------------------*/
+/*Homepage CSS Starts*/
+/*------------------*/
+#special-h3
+{
+    font-style: italic;
+    font-family: cursive;
+    margin-bottom: 2%;
+}
+div.img 
+{
+    border: 1px solid #ccc;
+}
+
+div.img:hover 
+{
+    border: 1px solid #777;
+}
+
+div.img img 
+{
+    width: 100%;
+    height: 30%;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#slider-search
+{
+    border: solid 1px lightblue;
+    position: absolute;
+    margin-top: -3%;
+    margin-left: 10%;
+    width: 80%;
+    height: 18%;
+    font-size: 30px;
+    background-color: rgb(80,200,200);
+    border-radius: 5px;
+//    border-top-left-radius: 10px;
+//    transition: transform 3s;
+}
+#slider-search:hover
+{
+    border: solid lightblue;
+    box-shadow: 7px 7px 7px black;
+//    transform: scale(1,2);
+}
+#slider-input
+{
+    margin-top: 1%;
+    border: solid 2px lightblue;
+    border-radius: 5px;
+}
+#slider-input:hover
+{
+    box-shadow: 7px 7px 7px black;
+}
+.contact-social>a:hover
+{
+    box-shadow: 7px 7px 5px black;
+}
+/*--------------------*/
+/*Homepage CSS Ends*/
+/*------------------*/
+
+/*----------------------------*/
+/*Reservation Page CSS Starts*/
+/*--------------------------*/
+#tabs
+{
+    border: solid lightgreen;
+}
+#tabs:hover
+{
+    box-shadow: 10px 10px 10px black;
+}
+#tabs>ul
+{
+    padding: 0%;
+    background-color: lightgreen;
+//    border: groove 5px green;
+}
+#tabs-1
+{
+//    border: solid green;
+    background-color: lightseagreen;
+    width: 100%;
+    margin-left: 0.01%;
+}
+#a1
+{
+    margin-bottom: -10%;
+    background-color: lightseagreen;
+}
+#tabs-2
+{
+    background-color: cadetblue;
+}
+#a2
+{
+    margin-bottom: -10%;
+    background-color: cadetblue;
+}
+
+/* enable absolute positioning */
+.inner-addon 
+{ 
+    position: relative; 
+}
+
+#top-a
+{
+    width: 100%;
+}
+#top-a:hover
+{
+    text-decoration: none;
+    color: aquamarine;
+}
+
+/* style icon */
+.inner-addon .glyphicon 
+{
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* align icon */
+.left-addon .glyphicon  { left:  0px;}
+.right-addon .glyphicon { right: 0px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+/*-----------------------*/
+/*Hotels Page CSS Starts*/
+/*---------------------*/
+#hotel-div a:hover
+{
+    text-decoration: none;
+    font-weight: bolder;
+}
+#hotel-para
+{
+    font-weight:bolder;
+    margin-top:9%;
+    margin-left:6%;
+}
+#hotel-div1
+{
+    padding:2%;
+    margin-top:-12%;
+    float:left;
+    margin-left:-18%;
+}
+#hotel-div2
+{
+    padding:0%;
+    margin-top:-24%;
+    margin-left:14%;
+    float:left;
+    width:103%;
+}
+#hotel-a
+{
+    width:50%;
+    padding:2%;
+}
+/*-----------------------*/
+/*Hotels Page CSS Ends*/
+/*---------------------*/
+
+
+/*------------------------------*/
+/*Hotels-Detail Page CSS Starts*/
+/*----------------------------*/
+
+#reserve-a
+{
+    font-family: fantasy;
+}
+#reserve-a:hover
+{
+    text-decoration: none;
+//    font-family: serif;
+    text-shadow: 2px 2px 2px black;
+}
+
+
+
+
+/*------------------------------*/
+/*Hotels-Detail Page CSS Starts*/
+/*----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------*/
+/* Css for Slider Starts Here*/
+/*--------------------------*/
+
+.jssorb05 
+{
+    position: absolute;
+}
+.jssorb05 div, .jssorb05 div:hover, .jssorb05 .av 
+{
+    position: absolute;
+/* size of bullet elment */
+    width: 16px;
+    height: 16px;
+    background: url('img/b05.png') no-repeat;
+    overflow: hidden;
+    cursor: pointer;
+}
+.jssorb05 div { background-position: -7px -7px; }
+.jssorb05 div:hover, .jssorb05 .av:hover { background-position: -37px -7px; }
+.jssorb05 .av { background-position: -67px -7px; }
+.jssorb05 .dn, .jssorb05 .dn:hover { background-position: -97px -7px; }
+.jssora22l, .jssora22r 
+{
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 58px;
+    cursor: pointer;
+    background: url('img/a22.png') center center no-repeat;
+    overflow: hidden;
+}
+.jssora22l { background-position: -10px -31px; }
+.jssora22r { background-position: -70px -31px; }
+.jssora22l:hover { background-position: -130px -31px; }
+.jssora22r:hover { background-position: -190px -31px; }
+.jssora22l.jssora22ldn { background-position: -250px -31px; }
+.jssora22r.jssora22rdn { background-position: -310px -31px; }
+
+/*--------------------------*/
+/* Css for Slider Ends Here*/
+/*------------------------*/
