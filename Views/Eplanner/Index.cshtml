@@ -1,89 +1,9 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
-
-<h2>Index</h2>
-<html>
+﻿<html>
 <head>
     <title>Home</title>
-    
-
-    <link href="~/Content/Site.css" rel="stylesheet" />
-    <script src="~/Site.js"></script>
-
-    <script src="~/Slider/full-width-slider.slider/js/jssor.slider.min.js"></script>
-    <link rel="stylesheet" href="~/Bootstrap/templatemo-style.css">
-
-
-    <!--Bootsrtap Libraries-->
-    <link rel="stylesheet" href="~/Bootstrap/bootstrap.min.css">
-    <script src="~/Bootstrap/bootstrap.min.js"></script>
-    <script src="~/Bootstrap/jquery.js"></script>
-
-    <!--JQuery UI Libraries-->
-    <link rel="stylesheet" href="~/JQuery-UI/jquery-ui.css">
-    <link rel="stylesheet" href="~/JQuery-UI/style.css">
-    <script src="~/JQuery-UI/jquery-1.10.2.js"></script>
-    <script src="~/JQuery-UI/jquery-ui.js"></script>
-
-    <!--Online Libraries-->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="~/font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.min.css">
-
 </head>
 <body style="background-color: rgb(80,200,170);">
-    <!--Start Header-->
-    <header>
-        <div class="navbar navbar-default" role="navigation" id="header">
-            <div class="navbar-header" id="nav-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="" href="#">
-                    <span class="navbar-brand">
-                        <span class="glyphicon glyphicon-tent"></span> ePlanner
-                    </span>
-                </a>
-            </div>
-
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right" id="main-ul">
-                    <li id="main-li">
-                        <a href="~/Eplanner/Index" id="main-a">
-                            <span class="glyphicon glyphicon-home padding-right-small"></span> Home<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                    <li id="main-li">
-                        <a href="~/Eplanner/Reservation" id="main-a">
-                            <span class="glyphicon glyphicon-briefcase padding-right-small"></span> Reservation<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                    <li id="main-li">
-                        <a href="~/Eplanner/About" id="main-a">
-                            <span class="glyphicon glyphicon-user padding-right-small"></span> About us<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                    <li id="main-li">
-                        <a href="~/Eplanner/Contact" id="main-a">
-                            <span class="glyphicon glyphicon-phone-alt padding-right-small"></span> Contact Us<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!--End Header-->
-    <div class="row" style="border:solid 1px;"></div>
-
-    <!--Body Starts Here-->
+ <!--Body Starts Here-->
     <div class="container-fluid">
         <!--Slider Starts-->
         <div class="row">
@@ -91,42 +11,42 @@
                 <!-- Loading Screen -->
                 <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                     <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; width: 100%; height: 100%;"></div>
-                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                    <div style="position:absolute;display:block;background:url('../../Slider/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                 </div>
                 <div data-u="slides" style="cursor: default; position: relative;width: 1300px; height: 500px; overflow: hidden;">
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/2.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/2.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/1.jpg." />
+                        <img data-u="image" src="~/Slider/img/New-folder/1.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/3.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/3.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/4.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/4.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/5.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/5.jpg" />
                     </div>
                 </div>
                 <!-- Bullet Navigator -->
                 <div data-u="navigator" class="jssorb05" style="bottom:40px; right:16px;" data-autocenter="1">
                     <!-- bullet navigator item prototype -->
                     <div data-u="prototype" style="width:25px;height:25px;">
-                        <img src="~/Slider/full-width-slider.slider/img/b05.png">
+                        <img src="~/Slider/img/b05.png">
                     </div>
                 </div>
                 <!-- Arrow Navigator -->
                 <span data-u="arrowleft" class="jssora22L" style="left:12px;width:50px;height:70px;" data-autocenter="2">
-                    <img src="~/Slider/full-width-slider.slider/img/a22.png" style="margin-left:-15px; margin-top:-30px;">
+                    <img src="~/Slider/img/a22.png" style="margin-left:-15px; margin-top:-30px;">
                 </span>
                 <span data-u="arrowright" class="jssora22R" style="right:12px;width:50px;height:70px;" data-autocenter="2">
-                    <img src="~/Slider/full-width-slider.slider/img/a22.png" style="margin-left:-70px; margin-top:-30px;">
+                    <img src="~/Slider/img/a22.png" style="margin-left:-70px; margin-top:-30px;">
                 </span>
             </div>
             <div id="slider-search">
-                <form action="~/Eplanner/Hotels" style="margin-top:5%;">
+                <form action="~/Eplanner/Hotels">
                     <div class="col-lg-12 form-inline">
                         <div class="input-group" style="width:31%; margin-left:1%;" id="slider-input">
                             <div class="input-group-addon">Check In</div>
@@ -244,7 +164,7 @@
         <div class="row">
             <div class="responsive">
                 <div class="img">
-                    <a target="_blank" href="Gallery/Exterior-arcadian-hotels-resortsShogran(Naran).jpg">
+                    <a target="_blank" href="~/Gallery/Exterior-arcadian-hotels-resortsShogran(Naran).jpg">
                         <img src="~/Gallery/Exterior-arcadian-hotels-resortsShogran(Naran).jpg">
                     </a>
                     <div class="desc">Exterior Arcadian Hotels Shogran (Naran)</div>
@@ -314,34 +234,6 @@
 
     </div>
     <!--Body Ends Here-->
-    <!--Start Footer-->
-    <!--Social Medias Row Starts-->
-    <div class="row" style="margin-top:2%;">
-        <div class="row" style="border-bottom:solid gray; margin-top:1%; margin-left:36%; width:28%;"></div>
-        <div class="row">
-            <h3 class="text-center" style="font-family:cursive; "><i> Places Where you can Contact us: </i></h3>
-            <div class="contact-social text-center">
-                <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
-                <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
-                <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
-                <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
-                <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
-            </div>
-        </div>
-    </div>
-    <!--Social Medias Row Starts-->
-
-    <footer class="tm-black-bg" style="margin-top: 1%;">
-        <div class="container">
-            <div class="row">
-                <p class="tm-copyright-text">
-                    Copyright &copy; 2084 | ePlanner | Designed by <a href="#">4 Pointers</a>
-                </p>
-            </div>
-        </div>
-    </footer>
-    <!--Start Footer-->
-
 
 
 
@@ -351,7 +243,6 @@
 
 </body>
 </html>
-
 
 
 

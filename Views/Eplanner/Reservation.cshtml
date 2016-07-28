@@ -1,96 +1,20 @@
-﻿
-@{
-    ViewBag.Title = "Reservation";
-}
-
-<h2>Reservation</h2>
-
-<html>
+﻿<html>
 <head>
     <title>Reservation</title>
-    <link rel="stylesheet" href="~/Site.css">
-    <script src="~/Site.js"></script>
-
-    <script src="~/Slider/full-width-slider.slider/js/jssor.slider.min.js"></script>
-    <link rel="stylesheet" href="~/Bootstrap/templatemo-style.css">
-
-    <!--Bootsrtap Libraries-->
-    <link rel="stylesheet" href="~/Bootstrap/bootstrap.min.css">
-    <script src="~/Bootstrap/bootstrap.min.js"></script>
-    <script src="~/Bootstrap/jquery.js"></script>
-
-    <!--JQuery UI Libraries-->
-    <link rel="stylesheet" href="~/JQuery-UI/jquery-ui.css">
-    <link rel="stylesheet" href="~/JQuery-UI/style.css">
-    <script src="~/JQuery-UI/jquery-1.10.2.js"></script>
-    <script src="~/JQuery-UI/jquery-ui.js"></script>
-
-    <!--Online Libraries-->
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-
-    <link rel="stylesheet" href="~/font-awesome-4.6.3/font-awesome-4.6.3/css/font-awesome.min.css">
 
     <!--jQuery UI Tabs -->
-    <link rel="stylesheet" href="JQuery-UI/Tabs/jquery-ui.cssj">
-    <script src="JQuery-UI/Tabs/jquery-1.10.2.jsj"></script>
-    <script src="JQuery-UI/Tabs/jquery-ui.js"></script>
+    <link rel="stylesheet" href="~/JQuery-UI/Tabs/jquery-ui.css">
+    <script src="~/JQuery-UI/Tabs/jquery-1.10.2.js"></script>
+    <script src="~/JQuery-UI/Tabs/jquery-ui.js"></script>
 
     <script>
-            $(function() {
-                $( "#tabs" ).tabs();
-            });
+        $(function () {
+            $("#tabs").tabs();
+        });
     </script>
 
 </head>
 <body style="background-color: rgb(80,200,170);">
-    <!--Start Header-->
-    <header>
-        <div class="navbar navbar-default" role="navigation" id="header">
-            <div class="navbar-header" id="nav-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="" href="#">
-                    <span class="navbar-brand">
-                        <span class="glyphicon glyphicon-tent"></span> ePlanner
-                    </span>
-                </a>
-            </div>
-
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right" id="main-ul">
-                    <li id="main-li">
-                        <a href="~/Eplanner/Index" id="main-a">
-                            <span class="glyphicon glyphicon-home padding-right-small"></span> Home<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                    <li id="main-li">
-                        <a href="~/Eplanner/Reservation" id="main-a">
-                            <span class="glyphicon glyphicon-briefcase padding-right-small"></span> Reservation<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                    <li id="main-li">
-                        <a href="~/Eplanner/About" id="main-a">
-                            <span class="glyphicon glyphicon-user padding-right-small"></span> About us<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                    <li id="main-li">
-                        <a href="~/Eplanner/Contact" id="main-a">
-                            <span class="glyphicon glyphicon-phone-alt padding-right-small"></span> Contact Us<!--<i class="fa fa-caret-down"></i>-->
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    <!--End Header-->
-    <div class="row" style="border:solid 1px;"></div>
 
     <!--Body Starts Here-->
     <div class="container-fluid">
@@ -100,210 +24,95 @@
                 <!-- Loading Screen -->
                 <div data-u="loading" style="position: absolute; top: 0px; left: 0px;">
                     <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block; width: 100%; height: 100%;"></div>
-                    <div style="position:absolute;display:block;background:url('img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
+                    <div style="position:absolute;display:block;background:url('../../Slider/img/loading.gif') no-repeat center center;top:0px;left:0px;width:100%;height:100%;"></div>
                 </div>
                 <div data-u="slides" style="cursor: default; position: relative;width: 1300px; height: 500px; overflow: hidden;">
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/2.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/2.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/1.jpg." />
+                        <img data-u="image" src="~/Slider/img/New-folder/1.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/3.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/3.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/4.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/4.jpg" />
                     </div>
                     <div data-p="225.00" style="display: none;">
-                        <img data-u="image" src="~/Slider/full-width-slider.slider/img/New-folder/5.jpg" />
+                        <img data-u="image" src="~/Slider/img/New-folder/5.jpg" />
                     </div>
                 </div>
                 <!-- Bullet Navigator -->
                 <div data-u="navigator" class="jssorb05" style="bottom:40px; right:16px;" data-autocenter="1">
                     <!-- bullet navigator item prototype -->
                     <div data-u="prototype" style="width:25px;height:25px;">
-                        <img src="~/Slider/full-width-slider.slider/img/b05.png">
+                        <img src="~/Slider/img/b05.png">
                     </div>
                 </div>
                 <!-- Arrow Navigator -->
                 <span data-u="arrowleft" class="jssora22L" style="left:12px;width:50px;height:70px;" data-autocenter="2">
-                    <img src="~/Slider/full-width-slider.slider/img/a22.png" style="margin-left:-15px; margin-top:-30px;">
+                    <img src="~/Slider/img/a22.png" style="margin-left:-15px; margin-top:-30px;">
                 </span>
                 <span data-u="arrowright" class="jssora22R" style="right:12px;width:50px;height:70px;" data-autocenter="2">
-                    <img src="~/Slider/full-width-slider.slider/img/a22.png" style="margin-left:-70px; margin-top:-30px;">
+                    <img src="~/Slider/img/a22.png" style="margin-left:-70px; margin-top:-30px;">
                 </span>
             </div>
-            <!--
-                <div id="slider-search">
-                    <form action="Hotels.html" style="mrgin-top:5%;">
-                        <div class="col-lg-12 form-inline">
-                            <div class="input-group" style="width:31%; margin-left:1%;" id="slider-input">
-                                <div class="input-group-addon">Check In</div>
-                                <input type="date" class="form-control" placeholder="">
-                                <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                </div>
-                            </div>
-                            <div class="input-group" style="width:31%; margin-left:1%;" id="slider-input">
-                                <div class="input-group-addon">Check Out</div>
-                                <input type="date" class="form-control" placeholder="">
-                                <div class="input-group-addon">
-                                    <span class="glyphicon glyphicon-calendar"></span>
-                                </div>
-                            </div>
-                            <div class="input-group" id="slider-input" style="width:30%; margin-left:1%; border-radius:5px;">
-                                <input list = "city" name="city" class="form-control" placeholder="--Select City--" style="">
-                                <datalist id="city">
-                                    <option>Lahore</option>
-                                    <option>Islamabad</option>
-                                    <option>Karachi</option>
-                                    <option>Multan</option>
-                                    <option>faisalbad</option>
-                                    <option>Peshawar</option>
-                                    <option>Azad Kashmir</option>
-                                    <option>Sawat</option>
-                                    <option>Quetta</option>
-                                    <option>Shaikhupura</option>
-                                    <option>Gujrat</option>
-                                    <option>Gujrawnwala</option>
-                                    <option>Rawalpindi</option>
-                                    <option>Hyderabad</option>
-                                    <option>Sialkot</option>
-                                    <option>Sargodha</option>
-                                    <option>Gilgit</option>
-                                    <option>Chitrl</option>
-                                    <option>Sukkar</option>
-                                    <option>Jhelum</option>
-                                    <option>Sahiwal</option>
-                                    <option>Jhang</option>
-                                </datalist>
-                            </div>
-
-                            <input type="submit" value="Check Availability" class="tm-yellow-btn" style="margin-left:42%; width:180px; margin-top:1%; border-radius:5px;">
-                        </div>
-                    </form>
-                </div>
-            -->
-        </div>
-        <!--Slider Ends-->
-        <!--
-            <div class="row">
-            <div class="section-margin-top">
-                <div class="tm-section-header">
-                    <div class="col-lg-4 col-md-4 col-sm-4"><hr style="margin-top:9%; margin-left:5%;"></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4"><h2 class="tm-section-title" style="font-family:cursive;">Top Cities</h2></div>
-                    <div class="col-lg-4 col-md-4 col-sm-4"><hr style="margin-top:9%; margin-left:3%;"></div>
-                </div>
-                <div class="row" style="margin-top:-4%;">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="top-city">
-                        <div class="tm-tours-box-1" style="margin-left:10%;margin-bottom:0%; margin-top:1%;">
-                            <img src="Images/Reservation/tumblr_mhnuh0nlLO1s35quwo1_1280.jpg" alt="image" class="img-responsive" id="tour-img">
-                            <div class="tm-tours-box-1-info" style="height:25%; margin-bottom: -5%;">
-                                <div class="tm-tours-box-1-info-left"style="width:20%;">
-                                    <p class="text-uppercase margin-bottom-20" style="font-weight:bolder;">Lahore</p>
-                                </div>
-                                <div class="tm-tours-box-1-info-right" style="width:80%;">
-                                    <p class="gray-text tours-1-description"style="width:108%; margin-left:0%;">
-                                        <a href="#">Restaurant (35)</a>
-                                        <a href="#">Hotels (42)</a>
-                                        <a href="#">Hostels (6)</a>
-                                        <a href="#">Guest houses (5)</a>
-                                        <a href="#">Apartments (3)</a>
-                                        <a href="#">Villas (2)</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tm-tours-box-1-link text-center">
-                                <a href="#" class="tm-tours-box-1-link-left" id="top-a">
-                                    Show Details
-                                </a>
+            <div id="slider-search">
+                <form action="~/Eplanner/Hotels">
+                    <div class="col-lg-12 form-inline">
+                        <div class="input-group" style="width:31%; margin-left:1%;" id="slider-input">
+                            <div class="input-group-addon">Check In</div>
+                            <input type="date" class="form-control" placeholder="">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
                             </div>
                         </div>
+                        <div class="input-group" style="width:31%; margin-left:1%;" id="slider-input">
+                            <div class="input-group-addon">Check Out</div>
+                            <input type="date" class="form-control" placeholder="">
+                            <div class="input-group-addon">
+                                <span class="glyphicon glyphicon-calendar"></span>
+                            </div>
+                        </div>
+                        <div class="input-group" id="slider-input" style="width:30%; margin-left:1%; border-radius:5px;">
+                            <input list="city" name="city" class="form-control" placeholder="--Select City--" style="">
+                            <datalist id="city">
+                                <option>Lahore</option>
+                                <option>Islamabad</option>
+                                <option>Karachi</option>
+                                <option>Multan</option>
+                                <option>faisalbad</option>
+                                <option>Peshawar</option>
+                                <option>Azad Kashmir</option>
+                                <option>Sawat</option>
+                                <option>Quetta</option>
+                                <option>Shaikhupura</option>
+                                <option>Gujrat</option>
+                                <option>Gujrawnwala</option>
+                                <option>Rawalpindi</option>
+                                <option>Hyderabad</option>
+                                <option>Sialkot</option>
+                                <option>Sargodha</option>
+                                <option>Gilgit</option>
+                                <option>Chitrl</option>
+                                <option>Sukkar</option>
+                                <option>Jhelum</option>
+                                <option>Sahiwal</option>
+                                <option>Jhang</option>
+                            </datalist>
+                        </div>
+                        <input type="submit" value="Check Availability" class="tm-yellow-btn" style="margin-left:42%; width:180px; margin-top:1%; border-radius:5px;">
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="top-city">
-                        <div class="tm-tours-box-1" style="margin-left:8%; margin-bottom:0%; margin-top:1%;">
-                            <img src="Images/Reservation/mazar-e-quaid-1.jpg" alt="image" class="img-responsive" id="tour-img">
-                            <div class="tm-tours-box-1-info" style="height:25%; margin-bottom: -5%;">
-                                <div class="tm-tours-box-1-info-left"style="width:20%;">
-                                    <p class="text-uppercase margin-bottom-20" style="font-weight:bolder;">Karachi</p>
-                                </div>
-                                <div class="tm-tours-box-1-info-right" style="width:80%;">
-                                    <p class="gray-text tours-1-description"style="width:108%; margin-left:0%;">
-                                        <a href="#">Restaurant (35)</a>
-                                        <a href="#">Hotels (42)</a>
-                                        <a href="#">Hostels (6)</a>
-                                        <a href="#">Guest houses (5)</a>
-                                        <a href="#">Apartments (3)</a>
-                                        <a href="#">Villas (2)</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tm-tours-box-1-link text-center">
-                                <a href="#" class="tm-tours-box-1-link-left" id="top-a">
-                                    Show Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="top-city">
-                        <div class="tm-tours-box-1" style="margin-left:10%; margin-bottom:0%; margin-top:3%;">
-                            <img src="Images/Reservation/cover8.jpg" alt="image" class="img-responsive" id="tour-img">
-                            <div class="tm-tours-box-1-info" style="height:25%; margin-bottom: -5%;">
-                                <div class="tm-tours-box-1-info-left"style="width:20%;">
-                                    <p class="text-uppercase margin-bottom-20" style="font-weight:bolder;">Islamabad</p>
-                                </div>
-                                <div class="tm-tours-box-1-info-right" style="width:80%;">
-                                    <p class="gray-text tours-1-description"style="width:108%; margin-left:0%;">
-                                        <a href="#">Restaurant (35)</a>
-                                        <a href="#">Hotels (42)</a>
-                                        <a href="#">Hostels (6)</a>
-                                        <a href="#">Guest houses (5)</a>
-                                        <a href="#">Apartments (3)</a>
-                                        <a href="#">Villas (2)</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tm-tours-box-1-link text-center">
-                                <a href="#" class="tm-tours-box-1-link-left" id="top-a">
-                                    Show Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6" id="top-city">
-                        <div class="tm-tours-box-1" style="margin-left:8%;margin-bottom:0%; margin-top:3%;">
-                            <img src="Images/Reservation/225008-6466f6de-a742-4ddb-bd48-c5f73b9f79a6l.jpg" alt="image" class="img-responsive" id="tour-img">
-                            <div class="tm-tours-box-1-info" style="height:25%; margin-bottom: -5%;">
-                                <div class="tm-tours-box-1-info-left"style="width:20%;">
-                                    <p class="text-uppercase margin-bottom-20" style="font-weight:bolder;">Multan</p>
-                                </div>
-                                <div class="tm-tours-box-1-info-right" style="width:80%;">
-                                    <p class="gray-text tours-1-description"style="width:108%; margin-left:0%;">
-                                        <a href="#">Restaurant (35)</a>
-                                        <a href="#">Hotels (42)</a>
-                                        <a href="#">Hostels (6)</a>
-                                        <a href="#">Guest houses (5)</a>
-                                        <a href="#">Apartments (3)</a>
-                                        <a href="#">Villas (2)</a>
-                                    </p>
-                                </div>
-                            </div>
-                            <div class="tm-tours-box-1-link text-center">
-                                <a href="#" class="tm-tours-box-1-link-left" id="top-a">
-                                    Show Details
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </form>
             </div>
         </div>
-        -->
+        <!--Slider Ends-->
+    </div>
         <div class="row" style="border:solid 1px;"></div>
 
         <div class="container-fluid">
-            <div class="row" style="margin-top:1%;">
+            <div class="row" style="margin-top:6%;">
                 <div class="tm-section-header" style="margin-bottom:0%;">
                     <div class="col-lg-3 col-md-3 col-sm-3"><hr style="margin-top:13%; margin-left:8%;"></div>
                     <div class="col-lg-6 col-md-6 col-sm-6"><h2 class="tm-section-title" style="font-family:Legends;">Reservation Froms</h2></div>
@@ -317,7 +126,7 @@
                         <li><a href="#tabs-2" id="a2">Events</a></li>
                     </ul>
                     <div class="row" id="tabs-1">
-                        <form>
+                        <form action="~/Eplanner/Confirmation">
                             <div class="col-lg-12">
                                 <div class="form-group col-lg-6">
                                     <label>Select City: </label>
@@ -460,7 +269,7 @@
                         </form>
                     </div>
                     <div id="tabs-2">
-                        <form>
+                        <form action="~/Eplanner/Confirmation">
                             <div class="col-lg-12">
                                 <div class="form-group col-lg-6">
                                     <label>Select City: </label>
@@ -611,39 +420,6 @@
                 </div>
             </div>
         </div>
-
-        <div class="container-fluid">
-            <div class="row">
-            </div>
-        </div>
-
-        <!--Start Footer-->
-        <!--Social Medias Row Starts-->
-        <div class="row">
-            <div class="row" style="border-bottom:solid gray; margin-top:1%; margin-left:36%; width:28%;"></div>
-            <div class="row">
-                <h3 class="text-center" style="font-family:cursive; "><i> Places Where you can Contact us: </i></h3>
-                <div class="contact-social text-center">
-                    <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
-                    <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
-                    <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
-                    <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
-                    <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
-                </div>
-            </div>
-        </div>
-        <!--Social Medias Row Starts-->
-
-        <footer class="tm-black-bg" style="margin-top: 1%;">
-            <div class="container">
-                <div class="row">
-                    <p class="tm-copyright-text">
-                        Copyright &copy; 2084 | ePlanner | Designed by <a href="#">4 Pointers</a>
-                    </p>
-                </div>
-            </div>
-        </footer>
-        <!--Start Footer-->
 
         <script>
             jssor_1_slider_init();

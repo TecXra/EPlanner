@@ -1,0 +1,8 @@
+Venue Type
+Others
+Maximium Occupancy
+Square Foot
+Event Type (s)
+Dinner Party, Wedding, Corporate Event, Launch Party, Birthday Party, Social Event
+Amenities
+Outside Catering, Catering Available, Music System, Great Views, Wifi, Indoor, Street Parking

@@ -4,41 +4,111 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - My ASP.NET Application</title>
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
+
+    <link href="~/Content/Site.css" rel="stylesheet" />
+    <script src="~/Content/Site.js"></script>
+
+    <script src="~/Slider/js/jssor.slider.min.js"></script>
+    <link href="~/Bootstrap/templatemo-style.css" rel="stylesheet" />
+
+    <!--Bootsrtap Libraries-->
+    <script src="~/Bootstrap/jquery.js"></script>
+    <script src="~/Bootstrap/bootstrap.min.js"></script>
+    <link href="~/Bootstrap/bootstrap.min.css" rel="stylesheet" />
+
+    <!--JQuery UI Libraries-->
+    <link href="~/JQuery-UI/style.css" rel="stylesheet" />
+    <link href="~/JQuery-UI/jquery-ui.css" rel="stylesheet" />
+    <script src="~/JQuery-UI/jquery-ui.js"></script>
+    <script src="~/JQuery-UI/jquery-1.10.2.js"></script>
+
+    <!--Online Libraries-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link href="~/Bootstrap/v/bootstrap.min.css" rel="stylesheet" />
+
+    <link href="~/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" />
+
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+    <!--Start Header-->
+    <header>
+        <div class="navbar navbar-default" role="navigation" id="header">
+            <div class="navbar-header" id="nav-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                <a class="" href="#">
+                    <span class="navbar-brand">
+                        <span class="glyphicon glyphicon-book"></span> ePlanner
+                    </span>
+                </a>
             </div>
+
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                <ul class="nav navbar-nav navbar-right" id="main-ul">
+                    <li id="main-li">
+                        <a href="~/Eplanner/Index" id="main-a">
+                            <span class="glyphicon glyphicon-home padding-right-small"></span> Home</a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/Reservation" id="main-a">
+                            <span class="glyphicon glyphicon-map-marker padding-right-small"></span> Reservation</a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/About" id="main-a">
+                            <span class="glyphicon glyphicon-user padding-right-small"></span> About us</a>
+                    </li>
+                    <li id="main-li">
+                        <a href="~/Eplanner/Contact" id="main-a">
+                            <span class="glyphicon glyphicon-phone-alt padding-right-small"></span> Contact Us</a>
+                    </li>
                 </ul>
-                @Html.Partial("_LoginPartial")
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
+    </header>
+    <!--End Header-->
+    <div class="row" style="border:solid 1px;"></div>
+    @RenderBody()
+    <footer>
+        <!--Social Medias Row Starts-->
+        <div class="row" style="margin-top:2%;">
+            <div class="row" style="border-bottom:solid gray; margin-top:1%; margin-left:36%; width:28%;"></div>
+            <div class="row">
+                <h3 class="text-center" style="font-family:cursive; "><i> Places Where you can Contact us: </i></h3>
+                <div class="contact-social text-center">
+                    <a href="#" class="tm-social-icon tm-social-facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="#" class="tm-social-icon tm-social-dribbble"><i class="fa fa-dribbble"></i></a>
+                    <a href="#" class="tm-social-icon tm-social-twitter"><i class="fa fa-twitter"></i></a>
+                    <a href="#" class="tm-social-icon tm-social-instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="#" class="tm-social-icon tm-social-google-plus"><i class="fa fa-google-plus"></i></a>
+                </div>
+            </div>
+        </div>
+        <!--Social Medias Row Starts-->
+        <div class="tm-black-bg" style="margin-top: 1%;">
+            <div class="row">
+                <p class="tm-copyright-text">
+                    Copyright &copy; 2084 | ePlanner | Designed by <a href="#">4 Pointers</a>
+                </p>
+            </div>
+        </div>
+    </footer>
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
-    @RenderSection("scripts", required: false)
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,13 @@
+Venue Type
+Others
+
+Maximium Occupancy
+700
+
+Square Foot
+Event Type (s)
+
+Party, Dinner Party, Wedding, Corporate Event, Launch Party, Birthday Party
+Amenities
+
+Catering Available, Non-smoking, Music System, Wifi, Valet Parking, Street Parking

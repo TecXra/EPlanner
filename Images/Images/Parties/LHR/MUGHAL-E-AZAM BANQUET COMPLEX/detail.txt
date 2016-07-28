@@ -1,0 +1,9 @@
+Venue Type
+Others
+Maximium Occupancy
+800
+Square Foot
+Event Type (s)
+Dinner Party, Wedding, Corporate Event, Meeting, Launch Party, Birthday Party
+Amenities
+A/V Equipment, Smoking, Music System, No Drinking Allowed
