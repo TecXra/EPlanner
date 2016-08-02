@@ -108,6 +108,8 @@ D:\Visual Studio 2015\EPlanner\EPlanner\bin\Microsoft.Owin.Security.MicrosoftAcc
 D:\Visual Studio 2015\EPlanner\EPlanner\obj\Debug\EPlanner.csprojResolveAssemblyReference.cache
 D:\Visual Studio 2015\EPlanner\EPlanner\obj\Debug\EPlanner.dll
 D:\Visual Studio 2015\EPlanner\EPlanner\obj\Debug\EPlanner.pdb
+C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\obj\Debug\EPlanner.Migrations.User.resources
+C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\obj\Debug\EPlanner.csproj.GenerateResource.Cache
 C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\bin\EPlanner.dll.config
 C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\bin\EPlanner.dll
 C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\bin\EPlanner.pdb
@@ -162,3 +164,6 @@ C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\bin\Microso
 C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\obj\Debug\EPlanner.dll
 C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\obj\Debug\EPlanner.pdb
+C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\obj\Debug\EPlanner.Migrations._new.resources
+C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\obj\Debug\EPlanner.Migrations.addColumn.resources
+C:\Users\Ali\Documents\Visual Studio 2015\Projects\EPlanner\EPlanner\obj\Debug\EPlanner.csprojResolveAssemblyReference.cache

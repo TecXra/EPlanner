@@ -1,4 +1,4 @@
-﻿@model IEnumerable<EPlanner.Models.Room>
+﻿@model IEnumerable<EPlanner.Models.RoomType>
 
 @{
     ViewBag.Title = "Index";
@@ -12,7 +12,7 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.RoomType.RoomName)
+            @Html.DisplayNameFor(model => model.RoomName)
         </th>
         <th></th>
     </tr>
@@ -20,7 +20,7 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.RoomType.RoomName)
+            @Html.DisplayFor(modelItem => item.RoomName)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |

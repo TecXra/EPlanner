@@ -1,4 +1,4 @@
-﻿@model EPlanner.Models.Room
+﻿@model EPlanner.Models.RoomType
 
 @{
     ViewBag.Title = "Details";
@@ -7,15 +7,15 @@
 <h2>Details</h2>
 
 <div>
-    <h4>Room</h4>
+    <h4>RoomType</h4>
     <hr />
     <dl class="dl-horizontal">
         <dt>
-            @Html.DisplayNameFor(model => model.RoomType.RoomName)
+            @Html.DisplayNameFor(model => model.RoomName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.RoomType.RoomName)
+            @Html.DisplayFor(model => model.RoomName)
         </dd>
 
     </dl>

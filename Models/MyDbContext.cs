@@ -19,7 +19,11 @@ namespace EPlanner.Models
         public DbSet<Room> DbRoom { get; set; }
         public DbSet<Event> DbEvent { get; set; }
 
-        
+        public DbSet<Booking> DbBooking { get; set; }
+        public DbSet<SiteUser> DbSiteUser { get; set; }
+        public DbSet<RoomType> DbRoomType { get; set; }
+
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
 
@@ -41,6 +45,7 @@ namespace EPlanner.Models
                             cs.MapLeftKey("HotelId");
                             cs.MapRightKey("EventId");
                             cs.ToTable("HotelEvent");
+							
                         });
 
             

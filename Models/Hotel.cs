@@ -14,6 +14,10 @@ namespace EPlanner.Models
 
         public string HotelName { set; get; }
 
+        public string PhoneNumber { set; get; }
+
+        public string Address { set; get; }
+
         [ForeignKey("CityId")]
         public virtual City city { get; set; }
         

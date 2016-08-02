@@ -10,112 +10,107 @@ using EPlanner.Models;
 
 namespace EPlanner.Controllers
 {
-    public class HotelsController : Controller
+    public class RoomTypesController : Controller
     {
         private MyDbContext db = new MyDbContext();
 
-        // GET: Hotels
+        // GET: RoomTypes
         public ActionResult Index()
         {
-            var dbHotel = db.DbHotel.Include(h => h.city);
-            return View(dbHotel.ToList());
+            return View(db.DbRoomType.ToList());
         }
 
-        // GET: Hotels/Details/5
+        // GET: RoomTypes/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hotel hotel = db.DbHotel.Find(id);
-            if (hotel == null)
+            RoomType roomType = db.DbRoomType.Find(id);
+            if (roomType == null)
             {
                 return HttpNotFound();
             }
-            return View(hotel);
+            return View(roomType);
         }
 
-        // GET: Hotels/Create
+        // GET: RoomTypes/Create
         public ActionResult Create()
         {
-            ViewBag.CityId = new SelectList(db.DbCity, "Id", "CityName");
             return View();
         }
 
-        // POST: Hotels/Create
+        // POST: RoomTypes/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,CityId,HotelName,PhoneNumber,Address")] Hotel hotel)
+        public ActionResult Create([Bind(Include = "Id,RoomName")] RoomType roomType)
         {
             if (ModelState.IsValid)
             {
-                db.DbHotel.Add(hotel);
+                db.DbRoomType.Add(roomType);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CityId = new SelectList(db.DbCity, "Id", "CityName", hotel.CityId);
-            return View(hotel);
+            return View(roomType);
         }
 
-        // GET: Hotels/Edit/5
+        // GET: RoomTypes/Edit/5
         public ActionResult Edit(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hotel hotel = db.DbHotel.Find(id);
-            if (hotel == null)
+            RoomType roomType = db.DbRoomType.Find(id);
+            if (roomType == null)
             {
                 return HttpNotFound();
             }
-            ViewBag.CityId = new SelectList(db.DbCity, "Id", "CityName", hotel.CityId);
-            return View(hotel);
+            return View(roomType);
         }
 
-        // POST: Hotels/Edit/5
+        // POST: RoomTypes/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,CityId,HotelName,PhoneNumber,Address")] Hotel hotel)
+        public ActionResult Edit([Bind(Include = "Id,RoomName")] RoomType roomType)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(hotel).State = EntityState.Modified;
+                db.Entry(roomType).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CityId = new SelectList(db.DbCity, "Id", "CityName", hotel.CityId);
-            return View(hotel);
+            return View(roomType);
         }
 
-        // GET: Hotels/Delete/5
+        // GET: RoomTypes/Delete/5
         public ActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Hotel hotel = db.DbHotel.Find(id);
-            if (hotel == null)
+            RoomType roomType = db.DbRoomType.Find(id);
+            if (roomType == null)
             {
                 return HttpNotFound();
             }
-            return View(hotel);
+            return View(roomType);
         }
 
-        // POST: Hotels/Delete/5
+        // POST: RoomTypes/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Hotel hotel = db.DbHotel.Find(id);
-            db.DbHotel.Remove(hotel);
+            RoomType roomType = db.DbRoomType.Find(id);
+            db.DbRoomType.Remove(roomType);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

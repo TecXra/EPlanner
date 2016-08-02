@@ -17,7 +17,8 @@ namespace EPlanner.Controllers
         // GET: Rooms
         public ActionResult Index()
         {
-            return View(db.DbRoom.ToList());
+            var dbRoom = db.DbRoom.Include(r => r.RoomType);
+            return View(dbRoom.ToList());
         }
 
         // GET: Rooms/Details/5
@@ -38,6 +39,7 @@ namespace EPlanner.Controllers
         // GET: Rooms/Create
         public ActionResult Create()
         {
+            ViewBag.RoomTypeId = new SelectList(db.DbRoomType, "Id", "RoomName");
             return View();
         }
 
@@ -46,7 +48,7 @@ namespace EPlanner.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "Id,RoomType")] Room room)
+        public ActionResult Create([Bind(Include = "Id,RoomTypeId")] Room room)
         {
             if (ModelState.IsValid)
             {
@@ -55,6 +57,7 @@ namespace EPlanner.Controllers
                 return RedirectToAction("Index");
             }
 
+            ViewBag.RoomTypeId = new SelectList(db.DbRoomType, "Id", "RoomName", room.RoomTypeId);
             return View(room);
         }
 
@@ -70,6 +73,7 @@ namespace EPlanner.Controllers
             {
                 return HttpNotFound();
             }
+            ViewBag.RoomTypeId = new SelectList(db.DbRoomType, "Id", "RoomName", room.RoomTypeId);
             return View(room);
         }
 
@@ -78,7 +82,7 @@ namespace EPlanner.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "Id,RoomType")] Room room)
+        public ActionResult Edit([Bind(Include = "Id,RoomTypeId")] Room room)
         {
             if (ModelState.IsValid)
             {
@@ -86,6 +90,7 @@ namespace EPlanner.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.RoomTypeId = new SelectList(db.DbRoomType, "Id", "RoomName", room.RoomTypeId);
             return View(room);
         }
 
